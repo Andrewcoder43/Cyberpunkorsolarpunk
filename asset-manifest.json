@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cyberpunkorsolarpunk/static/css/main.e334e361.css",
+    "main.js": "/cyberpunkorsolarpunk/static/js/main.c808eacc.js",
+    "static/js/453.10d58e89.chunk.js": "/cyberpunkorsolarpunk/static/js/453.10d58e89.chunk.js",
+    "index.html": "/cyberpunkorsolarpunk/index.html",
+    "main.e334e361.css.map": "/cyberpunkorsolarpunk/static/css/main.e334e361.css.map",
+    "main.c808eacc.js.map": "/cyberpunkorsolarpunk/static/js/main.c808eacc.js.map",
+    "453.10d58e89.chunk.js.map": "/cyberpunkorsolarpunk/static/js/453.10d58e89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e334e361.css",
+    "static/js/main.c808eacc.js"
+  ]
+}
