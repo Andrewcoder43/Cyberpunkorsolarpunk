@@ -1,0 +1,263 @@
+:root {
+  --cyberpunk-neon: #00ffff;
+  --solarpunk-green: #7fff00;
+  --background-dark: #0a0a0a;
+  --text-light: #f0f0f0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  background-image:
+    linear-gradient(45deg, rgba(0, 255, 255, 0.1) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(127, 255, 0, 0.1) 25%, transparent 25%);
+  background-size: 60px 60px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(to right, var(--cyberpunk-neon), var(--solarpunk-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(127, 255, 0, 0.5);
+}
+
+header p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: var(--text-light);
+}
+
+.question-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), 0 0 40px rgba(127, 255, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.question-box h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: var(--cyberpunk-neon);
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.option-wrapper {
+  flex: 1;
+}
+
+.option {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, var(--cyberpunk-neon), var(--solarpunk-green));
+  color: var(--background-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.option:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--cyberpunk-neon), 0 0 30px var(--solarpunk-green);
+}
+
+.result-bar {
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 30px;
+  position: relative;
+}
+
+.bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--cyberpunk-neon), var(--solarpunk-green));
+  transition: width 0.5s ease-in-out;
+}
+
+.result-bar span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-light);
+  font-weight: bold;
+  text-shadow: 0 0 5px var(--background-dark);
+}
+
+.total-votes {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--cyberpunk-neon);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: var(--text-light);
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+
+
+.result-bar-wrapper {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, var(--cyberpunk-neon), var(--solarpunk-green));
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.bar {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  position: relative;
+}
+
+.option {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+.decision-header {
+  text-align: center;
+  margin: 20px 0 10px;
+  font-size: 2em;  /* Increase the font size */
+  font-weight: bold;  /* Make it bold */
+  text-transform: uppercase;  /* Optional: makes it all caps for more emphasis */
+}
+
+.custom-answer {
+  text-align: center;
+  font-size: 1.1em;  /* Smaller than the decision header */
+  margin: 0 0 20px;
+  color: var(--text-light);
+}
+
+
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.option {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, var(--cyberpunk-neon), var(--solarpunk-green));
+  color: var(--background-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+.option:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--cyberpunk-neon), 0 0 30px var(--solarpunk-green);
+}
+
+.result-bar-wrapper {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.bar {
+  height: 100%;
+  position: absolute;
+  transition: width 0.5s ease-in-out;
+}
+
+.left-bar {
+  background-color: var(--cyberpunk-neon);
+  left: 0;
+}
+
+.right-bar {
+  background-color: var(--solarpunk-green);
+  right: 0;
+}
+
+.percentage-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.percentage-container p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.percentage-container p {
+  margin: 0;
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.total-votes {
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--background-dark);
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--cyberpunk-neon), var(--solarpunk-green));
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(127, 255, 0, 0.3);
+}
+
+
+
